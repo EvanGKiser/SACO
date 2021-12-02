@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- Evan Kiser, John Hudnall, Blake Opial, Devin Pardo -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SACO</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="nav">
+	<a href="index.html">Home</a>
+	<a href="Calendar.html">Calendar</a>
+	<a href="Schedule.html">Schedule</a>
+	<a href="AddCourse.html" class="current">Courses</a>
+</div>
+
+<section class="section section-light">
+    <h2>Course List</h2>
+  </section>
+  <section class="course">
+	<form action="js/addcourse.js" method="get" id="course">
+		<table>
+		  <tr>
+			<td>select</td>
+			<td>Department</td>
+			<td>Course</td>
+			<td>Section</td>
+			<td>hrs</td>
+			<td>Class Type</td>
+			<td>Time</td>
+			<td>Days</td>
+			<td>Building</td>
+		  </tr>
+		  <tr>
+			<td><input type="checkbox" id="course" name="CSC" value="3380"></td>
+			<td>CSC</td>
+			<td>3380</td>
+			<td>01</td>
+			<td>3.0</td>
+			<td>LEC</td>
+			<td>4:30-6:00</td>
+			<td>T TH</td>
+			<td>Patrick F Taylor</td>
+		  </tr>
+		  <tr>
+			<td><input type="checkbox" id="course" name="CSC" value="3380"></td>
+			<td>CSC</td>
+			<td>3380</td>
+			<td>01</td>
+			<td>3.0</td>
+			<td>LEC</td>
+			<td>4:30-6:00</td>
+			<td>T TH</td>
+			<td>Patrick F Taylor</td>
+		  </tr>
+		  <tr>
+			<td><input type="checkbox" id="course" name="CSC" value="3380"></td>
+			<td>CSC</td>
+			<td>3380</td>
+			<td>01</td>
+			<td>3.0</td>
+			<td>LEC</td>
+			<td>4:30-6:00</td>
+			<td>T TH</td>
+			<td>Patrick F Taylor</td>
+		  </tr>
+		  <tr>
+			<td><input type="checkbox" id="course" name="CSC" value="3380"></td>
+			<td>CSC</td>
+			<td>3380</td>
+			<td>01</td>
+			<td>3.0</td>
+			<td>LEC</td>
+			<td>4:30-6:00</td>
+			<td>T TH</td>
+			<td>Patrick F Taylor</td>
+		  </tr>
+		  <tr>
+			<td><input type="checkbox" id="course" name="CSC" value="3380"></td>
+			<td>CSC</td>
+			<td>3380</td>
+			<td>01</td>
+			<td>3.0</td>
+			<td>LEC</td>
+			<td>4:30-6:00</td>
+			<td>T TH</td>
+			<td>Patrick F Taylor</td>
+		  </tr>
+		</table>
+		<button type="submit" value="Submit">ADD COURSE</button>
+    </form>
+	<script>
+		function Addcourse() {
+            var printdata = document.getElementById('course').value;
+            newwin = window.open("");
+            newwin.document.write(printdata.innerHTML);
+            newwin.print();
+            newwin.close();
+		}
+	</script>
+  </section>
+
+<footer>
+	<section class="section section-dark">
+	<div align="center" cellpadding="10px" class="foot">
+	 <a href="mailto:SACO@gmail.com">Site Feedback</a>
+	  <div>&copy; 2021 SACO</div>
+	 </div>
+	</section>
+</footer>
+</html>

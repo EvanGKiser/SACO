@@ -1,0 +1,219 @@
+/* Evan Kiser, John Hudnall, Blake Opial, Devin Pardo */
+body, html{
+  height:100%;
+  margin:0;
+  padding:0;
+  font-size:20px;
+  font-family:"Segoe Print ", TimesNewRoman;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+  background-color:#f4f4f4;
+}
+body{
+	padding-top: 60px
+}
+footer{
+	position: absolute;
+	bottom:0;
+	width:100%;
+}
+.foot{
+	
+}
+
+.foot table{
+	text-align: center;
+	padding: 10px;
+}
+
+.foot td, th{
+
+}
+a{
+	color: #666;
+}
+.nav{
+  position:fixed;
+  z-index:100;
+  top:0;
+  padding:15px 10px 10px;
+  background-color:RGBA(253,253,253,0.78);
+  width:100%;
+  height:50px;
+  text-align:center;
+}
+
+.nav a{
+	font-size:25px;
+	padding: 20px;
+	text-decoration:none;
+	color: #666;
+}
+
+a:hover, a:focus{
+	color: cyan;
+}
+a.current{
+	color: cyan;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/cannon.jpg');
+  min-height:75%;
+}
+
+.pimg2{
+  background-image:url('../img/image2.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../img/image3.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+  padding:50px  25%;
+}
+
+.title{
+  font-size:400%;
+  color:#666;
+  padding:20px;
+}
+.subtitle{
+  font-size:50%;
+  color:#666;
+  padding:20px;	
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.section-dark a{
+	text-decoration:none;
+	color:#ddd;
+}
+
+.section-dark a:hover, a:focus{
+	color: cyan;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+  .nav{
+	 height:65px;
+	 text-align:center;
+  }
+  .title{
+	  font-size:150%;
+  }
+}
+@media print{
+.pimg1{
+	display:none;
+}
+	
+  .section-light{
+	padding-top:60px;
+	margin: 0;
+    color: #000;
+    background-color: #fff;
+  }
+}
+.course{
+	text-align:center;
+	background-color:#f4f4f4;
+	color:#666;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+table {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: .8rem;
+  margin: 0.5rem;
+  line-height: 1.5;
+  border-bottom: 1px solid #d0d0d0;
+  flex: 1 1 auto;
+}
+
+th {
+  display: none;
+  font-weight: 700;
+  background-color: #f2f2f2;
+}
+
+th > td {
+  white-space: normal;
+  justify-content: center;
+}
+
+tr {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+tr:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+td {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.5em;
+  word-break: break-word;
+  text-overflow: ellipsis;
+  min-width: 0px;
+  white-space: nowrap;
+  border-bottom: 1px solid #d0d0d0;
+}
